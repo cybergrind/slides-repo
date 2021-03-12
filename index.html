@@ -13,10 +13,15 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section ><section data-markdown><script type="text/template">## pytest ideology
+      <div class="slides"><section ><section data-markdown><script type="text/template">## Example presentation
 
 help us
 </script></section><section data-markdown><script type="text/template">
+Vertical slide with 4 dashes
+
+Higligh code inside `[]` blocks with `|` as separator
+
+
 ```python[4-5|1|2]
 def main():
     run_something()
@@ -24,7 +29,30 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-</script></section></section></div>
+<p class="fragment">Fade in</p>
+<p class="fragment highlight-red">Highlight red</p>
+</script></section></section><section  data-markdown><script type="text/template">
+Horizontal slide with 3 dashes
+</script></section><section ><section data-markdown><script type="text/template">
+Slide with image:
+
+<img src="./slide.png" />
+</script></section><section data-markdown><script type="text/template">
+Autoplay video:
+
+<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+
+</script></section></section><section  data-markdown><script type="text/template">
+Stacked images:
+
+<div class="v-stack">
+  <img class="fragment" src="https://placekitten.com/450/300" width="450" height="300">
+  <img class="fragment" src="https://placekitten.com/300/450" width="300" height="450">
+  <img class="fragment" src="https://placekitten.com/400/400" width="400" height="400">
+</div>
+</script></section><section  data-markdown><script type="text/template">
+Last Slide
+</script></section></div>
     </div>
 
     <script src="./dist/reveal.js"></script>
