@@ -27,7 +27,7 @@ Horizontal slide with 3 dashes
 
 Slide with image:
 
-<img src="./slide.png" />
+<img src="./static/slide.png" />
 
 ----
 
