@@ -6,14 +6,13 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
-  steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-    - run: npm install reveal-md
-    - run: npx reveal-md --statiout slides.md
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.PUBLISH_TOKEN }}
-        publish_dir: ./public
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm install reveal-md
+      - run: npx reveal-md --static public slides.md
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.PUBLISH_TOKEN }}
+          publish_dir: ./public
