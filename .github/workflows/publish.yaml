@@ -1,3 +1,5 @@
+name: github.io publish
+
 on:
   push:
     branches:
